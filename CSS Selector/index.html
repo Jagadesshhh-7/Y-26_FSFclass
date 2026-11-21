@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Demonstration</title>
+
+    <style>
+
+        /* 1. Element Selector */
+        h1, h2 {
+            color: turquoise;
+        }
+
+        /* 2. Class Selector */
+        .highlight {
+            background-color: lightgreen;
+            color: darkgreen;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        /* 3. Grouping Selector */
+        h1, h2, h3, p {
+            font-family: "Times New Roman";
+        }
+
+        /* 4. Descendant and Child Selectors */
+        section > p {
+            background-color: lightyellow;
+            color: navy;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        section p {
+            background-color: lightyellow;
+        }
+
+        /* 5. Sibling Selectors */
+        h3 {
+            color: purple;
+        }
+
+        h3 + p {
+            background-color: lightyellow;
+            color: brown;
+            font-weight: bold;
+        }
+
+        h3 ~ p {
+            background-color: lightyellow;
+        }
+
+        /* 6. Attribute Selectors */
+        input[type="text"] {
+            border: 1px solid gray;
+        }
+
+        input[type="password"] {
+            border: 1px solid gray;
+        }
+
+        input[type="email"] {
+            border: 1px solid gray;
+        }
+
+        a[href] {
+            color: purple;
+        }
+
+        /* 7. Pseudo-Class Selectors */
+        button:hover {
+            background-color: lightpink;
+            color: purple;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+        }
+
+        li:first-child {
+            color: black;
+        }
+
+        input:checked {
+            accent-color: blue;
+        }
+
+        input:disabled {
+            background-color: #eeeeee;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS SELECTOR DEMONSTRATION</h1>
+
+    <h2>CSS SELECTOR DEMONSTRATION2</h2>
+
+    <p>This paragraph demonstrates the element selector</p>
+
+
+    <h3>2. Class Selector</h3>
+
+    <p class="highlight">
+        First paragraph using class selector
+    </p>
+
+    <p>Second paragraph using the same class</p>
+
+
+    <h3>3. Grouping Selector</h3>
+
+    <p>This paragraph is styled using a grouping selector</p>
+
+
+    <h3>4. Descendant and Child Selectors</h3>
+
+    <section>
+        <p>Direct child paragraph</p>
+
+        <div>
+            <p>Nested paragraph inside section</p>
+        </div>
+    </section>
+
+
+    <h3>5. Sibling Selectors</h3>
+
+    <h3>Sibling Selector Heading</h3>
+
+    <p>First paragraph immediately after h3</p>
+
+    <p>Second paragraph after h3.</p>
+
+    <p>Third paragraph after h3.</p>
+
+
+    <h3>6. Attribute Selectors</h3>
+
+    <br>
+
+    <input type="text" placeholder="Enter your name">
+
+    <br><br>
+
+    <input type="password" placeholder="Enter password">
+
+    <br><br>
+
+    <input type="email" placeholder="Enter email">
+
+    <br><br>
+
+    <a href="https://www.google.com">Visit Google</a>
+
+
+    <h3>7. Pseudo-Class Selectors</h3>
+
+    <br>
+
+    <button>Move Mouse Over Me</button>
+
+    <br><br>
+
+    <input type="text" placeholder="Click here to focus">
+
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+    </ul>
+
+    <input type="checkbox" checked> Java
+
+    <br><br>
+
+    <input type="checkbox"> Python
+
+    <br><br>
+
+    <input type="text" value="Disabled Input" disabled>
+
+</body>
+</html>
